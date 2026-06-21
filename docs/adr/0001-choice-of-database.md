@@ -19,5 +19,5 @@ Pro:
 -Performance: Since the objects in the warehouse will be thousands and identified by the barcode, the b-tree index will be the best to search through them
 
 Cons: 
--Need a PostgreSQL instance running (via Docker or dedicated server) (H2 is embedded, will be used for tests)
+-Need a PostgreSQL instance running (via Docker or dedicated server) (tests use PostgreSQL via Testcontainers to avoid SQL dialect incompatibilities)
 -Greater operational overhead
