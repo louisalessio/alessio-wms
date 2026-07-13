@@ -22,7 +22,7 @@ import com.alessio.wms.material.entity.Material;
 public class Inventory {
 
     @Id
-    private Long materialId;
+    private Long id;
 
     @OneToOne
     @MapsId
@@ -34,5 +34,5 @@ public class Inventory {
 
     @Version
     @Column(nullable = false)
-    private Integer version = 0;
+    private Integer version;
 }
