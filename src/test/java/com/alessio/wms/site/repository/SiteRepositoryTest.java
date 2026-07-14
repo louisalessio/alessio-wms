@@ -13,9 +13,8 @@ import org.springframework.boot.jdbc.test.autoconfigure.AutoConfigureTestDatabas
 import com.alessio.wms.BaseIntegrationTest;
 import com.alessio.wms.site.entity.Site;
 
-@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE) // so spring doesn't create a DB just for
-                                                                             // tests
-@DataJpaTest // implicit transactional annotation
+@DataJpaTest
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 class SiteRepositoryTest extends BaseIntegrationTest {
 
     @Autowired
