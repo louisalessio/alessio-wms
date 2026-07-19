@@ -33,13 +33,13 @@ public class MovementService {
     private SiteRepository siteRepository;
 
     public void registerMovement(String materialCode, MovementType type, int quantity, String operator,
-            String siteCode) {
+            String siteName) {
         Material material = materialRepository.findByCode(materialCode).orElseThrow(
                 () -> new IllegalArgumentException("Error: Material Code doesn't exists (" + materialCode + ")"));
         Site site = null;
-        if (siteCode != null && !siteCode.trim().isEmpty()) {
-            site = siteRepository.findByName(siteCode)
-                    .orElseThrow(() -> new IllegalArgumentException("Error: Site doesn't exist (" + siteCode + ")"));
+        if (siteName != null && !siteName.trim().isEmpty()) {
+            site = siteRepository.findByName(siteName)
+                    .orElseThrow(() -> new IllegalArgumentException("Error: Site doesn't exist (" + siteName + ")"));
         }
         Inventory inventory;
         Movement movement = new Movement();
