@@ -6,7 +6,7 @@ Built with Spring Boot and PostgreSQL. Designed to run mainly on mobile
 
 ## Stack
 - Java 21 / Spring Boot 4.1.0
-- PostgreSQL 18
+- PostgreSQL 16 (LTS)
 - Flyway (schema migrations)
 - Testcontainers (integration tests against real PostgreSQL)
 - Lombok
