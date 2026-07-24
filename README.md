@@ -5,28 +5,27 @@ with barcode scanning, movement history, and job site assignment, in the future 
 Built with Spring Boot and PostgreSQL. Designed to run mainly on mobile
 
 ## Live Demo
-`https://louisalessio.online`
 -List materials: `GET https://louisalessio.online/api/materials`
 -Check inventory: `GET https://louisalessio.online/api/inventory`
 -Load stock: `POST https://louisalessio.online/api/movements/load`
 (search by code so the material has to exist)
-    ```json
-    {
-        "materialCode": "WIRE-001",
-        "quantity": 10,
-        "siteId": 1,
-        "operator": "Louis"
-    }
-    ```
+```json
+{
+    "materialCode": "WIRE-001",
+    "quantity": 10,
+    "siteId": 1,
+    "operator": "Louis"
+}
+```
 -Unload stock: `POST https://louisalessio.online/api/movements/unload`
-    ```json
-    {
-        "materialCode": "WIRE-001",
-        "quantity": 3,
-        "siteId": 1,
-        "operator": "Louis"
-    }
-    ```
+```json
+{
+    "materialCode": "WIRE-001",
+    "quantity": 3,
+    "siteId": 1,
+    "operator": "Louis"
+}
+```
 
 ## Stack
 - Java 21 / Spring Boot 4.1.0
