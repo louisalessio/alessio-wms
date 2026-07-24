@@ -5,9 +5,9 @@ with barcode scanning, movement history, and job site assignment, in the future 
 Built with Spring Boot and PostgreSQL. Designed to run mainly on mobile
 
 ## Live Demo
--List materials: `GET https://louisalessio.online/api/materials`
--Check inventory: `GET https://louisalessio.online/api/inventory`
--Load stock: `POST https://louisalessio.online/api/movements/load`
+- List materials: `GET https://louisalessio.online/api/materials`
+- Check inventory: `GET https://louisalessio.online/api/inventory`
+- Load stock: `POST https://louisalessio.online/api/movements/load`
 (search by code so the material has to exist)
 ```json
 {
