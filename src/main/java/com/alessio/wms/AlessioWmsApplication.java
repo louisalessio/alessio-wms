@@ -10,4 +10,5 @@ public class AlessioWmsApplication {
 		SpringApplication.run(AlessioWmsApplication.class, args);
 	}
 
+	
 }
